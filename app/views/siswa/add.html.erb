@@ -1,0 +1,14 @@
+<!-- app/views/todo/tambah.html.erb -->
+
+<%= link_to 'kembali', siswa_index_path %>
+
+<br><br>
+
+<%= form_with model: @siswa, url: siswa_kirim_path do |f| %>
+
+    <label>Nama Siswa</label><br>
+    <%= f.text_field :nama_siswa, placeholder: 'Nama SIswa' %>
+    <br><br>
+
+    <%= f.submit 'Tambah' %>
+<% end %>
